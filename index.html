@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+
+    <title>ABD</title>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">AdminHub</span>
+        </a>
+        <ul class="side-menu top">
+            <!-- Dropdown -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Monitor Process Guidelines</span>
+                </a>
+                <div class="dropdown-content">
+                    <!-- Dropdown options -->
+                    <a href="1. MICROBIAL CHECKLIST - How to use this Document.html">Plant checklist</a>
+                    <a href="1. MICROBIAL CHECKLIST - Microbial load limit.html">Microbial LoadLimit</a>
+					<a href="#">User Guidelines</a>
+					<a href="#">Confirmative Overview</a>
+                    <a href="http://127.0.0.1:5000">Hygiene Monitor</a>
+                </div>
+            </li>
+            <!-- End Dropdown -->
+            <li class="#">
+                <a href="temperature.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Temperature</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/spreadsheets/d/13_HKX0BJbjdzcHl9ONBafHGmZxohMijIO_ZwhBo8Qrk/edit?usp=sharing">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">Hygiene checklist</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">Microbial load limit</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">User Guidance</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-doughnut-chart'></i>
+                    <span class="text">Confirmative Overview</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="side-menu">
+            <!-- Your existing menu items... -->
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- Your existing content... -->
+    </section>
+    <!-- CONTENT -->
+
+    <script src="script.js"></script>
+</body>
+</html>

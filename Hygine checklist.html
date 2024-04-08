@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to Next Page and Google Sheets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="redirectToNextPage()">Go to Next Page and Google Sheets</button>
+
+    <script>
+        function redirectToNextPage() {
+            // Replace 'YOUR_GOOGLE_SHEETS_LINK' with the actual link to your Google Sheets
+            var googleSheetsLink = 'YOUR_GOOGLE_SHEETS_LINK';
+
+            // Redirect to the next page
+            window.location.href = 'next_page.html';
+
+            // Open the Google Sheets link in a new tab
+            window.open(googleSheetsLink, '_blank');
+        }
+    </script>
+
+</body>
+</html>

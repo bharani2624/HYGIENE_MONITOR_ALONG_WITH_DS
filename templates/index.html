@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection</title>
+    <style>
+        .card{
+  width: 25%;
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+    </style>
+
+    <!-- Add any additional styles or scripts if needed -->
+</head>
+<body>
+    <h1>YOLOv5 Object Detection</h1>
+    <div class="card">
+        <img src="{{ url_for('video_feed') }}" alt="Video Stream">
+    </div>
+    <div>
+        {% if safety_message %}
+            <p>{{ safety_message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
